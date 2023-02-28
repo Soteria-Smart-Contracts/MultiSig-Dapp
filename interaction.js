@@ -65,8 +65,8 @@ async function CreateShibCProp(){
     let Memo = document.getElementById('SHmemo').value;
     console.log(Amount, Receiver, Memo);
 
-    gas = await contract.methods.CreateETCProposal(ShibC, Amount, Receiver, Memo).estimateGas({from: account, value: 0});
-    ID = await contract.methods.CreateETCProposal(ShibC, Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
+   // gas = await contract.methods.CreateETCProposal(ShibC, Amount, Receiver, Memo).estimateGas({from: account, value: 0});
+    ID = await contract.methods.CreateETCProposal(ShibC, Amount, Receiver, Memo).send({from: account, value: 0, gas: 2100000});
     NewIDETC.innerText = "Your New proposal ID is" + ID;
 }
 
