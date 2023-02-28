@@ -46,7 +46,7 @@ async function getID(){
 }
 
 async function CreateETCProp(){
-    let Amout = document.getElementById('ETCAMM');
+    let Amout = web3.utils.toWei(document.getElementById('ETCAMM'));
 
 }
 
