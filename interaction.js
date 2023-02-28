@@ -25,7 +25,7 @@ async function loginWithEth(){
         account = accountarray[0];
         CanSign = await IsSigner();
         console.log('Logged In')
-        LoginText.innerHTML = "Connected with:" + '<br>' + account.substring();
+        LoginText.innerHTML = "Connected with:" + '<br>' + account.substring(0, 7);
         if(CanSign == true){
             Signer.innerText = "This account is a signer"
         }else{
