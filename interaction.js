@@ -52,7 +52,7 @@ async function CreateETCProp(){
     let Memo = document.getElementById('ETCmemo').value;
     console.log(Amount, Receiver, Memo)
 
-    gas = 
+    gas = contract.methods.Crea
 
 }
 
