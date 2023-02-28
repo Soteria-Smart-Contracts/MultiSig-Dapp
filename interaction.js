@@ -7,6 +7,7 @@ let LoggedIn = false;
 loginWithEth();
 
 LoginText = document.getElementById('LoggedIn');
+Signer = document.getElementById('Signer');
 
 async function loginWithEth(){
     if(LoggedIn == false){
