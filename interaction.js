@@ -39,6 +39,9 @@ async function getID(){
 }
 
 async function IsSigner(){
-    
+    let One;
+    let One;
+    let One;
+    let One;
 }
 
