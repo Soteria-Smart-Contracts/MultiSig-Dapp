@@ -46,7 +46,18 @@
     <a style="font-size: larger; font-weight: bold;">CreateShibCProposal:</a>
     <br>
     <br>
-    <input></input>
+    <input id="ETCAMM" placeholder="ShibC Amount in decimal" style="font-size: medium; width: max-content; padding: 3px; text-align: center;"></input>
+    <br>
+    <br>
+    <input id="ETCrec" placeholder="Receiving Address" style="font-size: medium; width: fit-content; padding: 3px; text-align: center;"></input>
+    <br>
+    <br>
+    <input id="ETCmemo" placeholder="Memo (Text only)" style="font-size: medium; width: max-content; padding: 3px; text-align: center;"></input>
+    <br>
+    <br>
+    <button onclick="CreateETCProp()">Submit Transaction</button>
+    <br>
+    <a id="NewIDETC" style="font-size: large;"></a>
 
 
 <script src="abi.js"></script>
