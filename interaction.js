@@ -46,7 +46,6 @@ async function getID(){
 }
 
 async function IsSigner(){
-    account = 0xb34ce092a878b9d7fada182c19e310cc4823a954;
     let One = await contract.methods.SignerOne().call();
     let Two = await contract.methods.SignerTwo().call();
     let Three = await contract.methods.SignerThree().call();
