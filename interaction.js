@@ -59,9 +59,9 @@ async function CreateETCProp(){
 }
 
 async function CreateShibCProp(){
-    let Amount = BigInt(web3.utils.toWei(document.getElementById('ETCAMM').value));
-    let Receiver = document.getElementById('ETCrec').value;
-    let Memo = document.getElementById('ETCmemo').value;
+    let Amount = BigInt(web3.utils.toWei(document.getElementById('SHAMM').value));
+    let Receiver = document.getElementById('SHrec').value;
+    let Memo = document.getElementById('SHmemo').value;
     console.log(Amount, Receiver, Memo);
 
     gas = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).estimateGas({from: account, value: 0});
