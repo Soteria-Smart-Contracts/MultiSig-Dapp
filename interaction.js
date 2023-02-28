@@ -45,6 +45,8 @@ async function getID(){
     return(netID);
 }
 
+async function Create
+
 async function IsSigner(){
     let One = await contract.methods.SignerOne().call();
     let Two = await contract.methods.SignerTwo().call();
