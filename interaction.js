@@ -71,7 +71,7 @@ async function CreateShibCProp(){
 }
 
 async function SignProposal(){
-    
+    let ID = document.get
 }
 
 async function IsSigner(){
