@@ -29,11 +29,6 @@ async function loginWithEth(){
     }
 }
 
-async function getsupply(){
-    supply = await contract.methods.totalSupply().call();
-    document.getElementById("Minted").innerHTML = supply;
-}
-
 async function getID(){
     let idhex = web3.eth._provider.chainId;
     netID = parseInt(idhex, 16);
