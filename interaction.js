@@ -52,8 +52,8 @@ async function CreateETCProp(){
     let Memo = document.getElementById('ETCmemo').value;
     console.log(Amount, Receiver, Memo);
 
-    gas = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).estimateGas({from: account, value: 0});
-    tx = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
+   // gas = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).estimateGas({from: account, value: 0});
+    tx = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).send({from: account, value: 0, gas: 5});
     console.log(tx);
 }
 
