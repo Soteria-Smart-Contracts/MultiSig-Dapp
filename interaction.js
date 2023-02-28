@@ -6,6 +6,8 @@ let LoggedIn = false;
 
 loginWithEth();
 
+LoginText = 
+
 async function loginWithEth(){
     if(LoggedIn == false){
     if(window.ethereum){
