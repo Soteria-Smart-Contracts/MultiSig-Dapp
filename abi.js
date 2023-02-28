@@ -1,1 +1,1 @@
-window.abi = {}
+window.abi = }
