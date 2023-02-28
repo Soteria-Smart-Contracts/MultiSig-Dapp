@@ -27,7 +27,9 @@ async function loginWithEth(){
         console.log('Logged In')
         LoginText.innerHTML = "Connected with:" + '<br>' + account;
         if(CanSign == true){
-            Signer.innerText
+            Signer.innerText = "This account is a signer"
+        }else{
+            
         }
         LoggedIn = true;
     } else { 
