@@ -71,7 +71,7 @@ async function CreateShibCProp(){
 }
 
 async function SignProposal(){
-    let ID = BigInt(document.getElementById('SignID'));
+    let ID = document.getElementById('SignID').value;
 //    gas = await contract.methods.SignProposal(ID).estimateGas({from: account, value: 0});
     ID = await contract.methods.SignProposal(ID).send({from: account, value: 0, gas: 210000});
 }
