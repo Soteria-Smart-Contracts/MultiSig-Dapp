@@ -26,7 +26,9 @@ async function loginWithEth(){
         CanSign = await IsSigner();
         console.log('Logged In')
         LoginText.innerHTML = "Connected with:" + '<br>' + account;
-        if(CanSign == true)
+        if(CanSign == true){
+            Signer.innerHTML
+        }
         LoggedIn = true;
     } else { 
         alert("No ETHER Wallet available")
