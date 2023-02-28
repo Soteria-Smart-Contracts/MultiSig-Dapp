@@ -46,7 +46,7 @@ async function getID(){
 }
 
 async function CreateETCProp(){
-    
+    let DecimalAmount = document.getElementById
 }
 
 async function IsSigner(){
