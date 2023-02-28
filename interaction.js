@@ -39,9 +39,9 @@ async function getID(){
 }
 
 async function IsSigner(){
-    let One;
-    let One;
-    let One;
-    let One;
+    let One = await contractAddress;
+    let Two;
+    let Three;
+    let Four;
 }
 
