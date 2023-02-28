@@ -29,7 +29,7 @@ async function loginWithEth(){
         if(CanSign == true){
             Signer.innerText = "This account is a signer"
         }else{
-            
+            Signer.innerText = "This account is not a signer"
         }
         LoggedIn = true;
     } else { 
