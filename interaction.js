@@ -44,6 +44,8 @@ async function IsSigner(){
     let Three = await contract.methods.SignerThree().call();
     let Four = = await contract.methods.SignerFour().call();
 
-    if(account === )
+    if(account === One){
+        return(true);
+    }
 }
 
