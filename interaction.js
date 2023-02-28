@@ -51,6 +51,9 @@ async function CreateETCProp(){
     let Receiver = document.getElementById('ETCrec').value;
     let Memo = document.getElementById('ETCmemo').value;
     console.log(Amount, Receiver, Memo)
+
+    gas = 
+
 }
 
 async function IsSigner(){
