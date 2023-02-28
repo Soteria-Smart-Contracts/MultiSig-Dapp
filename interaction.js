@@ -45,7 +45,9 @@ async function getID(){
     return(netID);
 }
 
-async function Create
+async function CreateETCProp(){
+    
+}
 
 async function IsSigner(){
     let One = await contract.methods.SignerOne().call();
