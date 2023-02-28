@@ -9,6 +9,7 @@ loginWithEth();
 
 LoginText = document.getElementById('LoggedIn');
 Signer = document.getElementById('Signer');
+NewIDETC = document.getElementById('NewIDETC');
 
 async function loginWithEth(){
     if(LoggedIn == false){
