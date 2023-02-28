@@ -54,7 +54,6 @@ async function CreateETCProp(){
 
     gas = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).estimateGas({from: account, value: 0});
     tx = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
-    console.log(tx);
 }
 
 async function IsSigner(){
