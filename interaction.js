@@ -72,8 +72,8 @@ async function CreateShibCProp(){
 
 async function SignProposal(){
     let ID = document.getElementById('SignID');
-    gas = await contract.methods.CreateETCProposal(ShibC, Amount, Receiver, Memo).estimateGas({from: account, value: 0});
-    ID = await contract.methods.CreateERC20Proposal(ShibC, Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
+    gas = await contract.methods.SignProposal(ShibC, Amount, Receiver, Memo).estimateGas({from: account, value: 0});
+    ID = await contract.methods.SignProposal(ShibC, Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
 }
 
 async function IsSigner(){
