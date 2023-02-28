@@ -6,7 +6,7 @@ let LoggedIn = false;
 
 loginWithEth();
 
-LoginText = 
+LoginText = document.getElementById('LoggedIn');
 
 async function loginWithEth(){
     if(LoggedIn == false){
