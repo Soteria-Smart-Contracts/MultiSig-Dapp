@@ -46,8 +46,8 @@ async function getID(){
 }
 
 async function CreateETCProp(){
-    let Amout = web3.utils.toWei(document.getElementById('ETCAMM'));
-
+    let Amount = web3.utils.toWei(document.getElementById('ETCAMM'));
+    console.log(Amount)
 }
 
 async function IsSigner(){
