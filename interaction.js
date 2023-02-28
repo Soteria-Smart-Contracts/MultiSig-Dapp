@@ -13,9 +13,8 @@ async function loginWithEth(){
         window.web3 = await new Web3(ethereum);
         await getID();
         if (netID != 61){
-            console.log("The current Metamask/Web3 network is not Ethereum Classic, please connect to the Ropsten test network."); 
-            alert("The current Metamask/Web3 network is not Ropsten, please connect to the Ethereum Classic test network.");
-            showOverlay();
+            console.log("The current Metamask/Web3 network is not Ethereum Classic, please connect to the Ethereum Classic."); 
+            alert("The current Metamask/Web3 network is not Ropsten, please connect to the Ethereum Classic network.");
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
