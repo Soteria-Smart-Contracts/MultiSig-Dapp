@@ -21,7 +21,6 @@ async function loginWithEth(){
         accountarray = await web3.eth.getAccounts();
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
-        getsupply();
         DisplayLoggedIn();
         console.log('Logged In')
         LoggedIn = true;
@@ -43,21 +42,3 @@ async function getID(){
     return(netID);
 }
 
-async function mint(){
-    let amount = document.getElementById("Input").value;
-    if(amount == 0 || amount > 100){
-        alert("Amount to mint must be greater than 0 and less than 101")
-        return('Error Thrown')
-    }
-    let amountWei = amount * 2000000000000000000;
-    let userbal = await web3.eth.getBalance(account);
-    if(amountWei > userbal){
-        alert("Insufficient ETC to buy this number of Bogs")
-        return('Error Thrown')
-    }
-    let gas = await contract.methods.mint(amount).estimateGas({from: account, value: amountWei});
-    let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: gas});
-
-    getsupply();
-    alert('ETCFrogB/s Successfully Minted, check the "My Frogs" tab to see your newly minted frog/s!')
-}
