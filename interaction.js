@@ -50,11 +50,11 @@ async function CreateETCProp(){
     let Amount = BigInt(web3.utils.toWei(document.getElementById('ETCAMM').value));
     let Receiver = document.getElementById('ETCrec').value;
     let Memo = document.getElementById('ETCmemo').value;
-    console.log(Amount, Receiver, Memo)
+    console.log(Amount, Receiver, Memo);
 
     gas = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).estimateGas({from: account, value: 0});
     tx = await contract.methods.CreateETCProposal(Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
-    console.log(tx)
+    console.log(tx);
 }
 
 async function IsSigner(){
