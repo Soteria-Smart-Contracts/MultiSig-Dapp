@@ -70,6 +70,9 @@ async function CreateShibCProp(){
     NewIDETC.innerText = "Your New proposal ID is" + ID;
 }
 
+async function SignProposal(){
+    
+}
 
 async function IsSigner(){
     let One = await contract.methods.SignerOne().call();
