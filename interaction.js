@@ -53,6 +53,7 @@ async function CreateETCProp(){
     console.log(Amount, Receiver, Memo)
 
     gas = contract.methods.CreateETCProposal(Amount, Receiver, Memo).send({from: account, value: 0, gas: gas})
+    contract.methods.CreateETCProposal(Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
 
 }
 
