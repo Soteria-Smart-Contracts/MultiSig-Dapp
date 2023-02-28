@@ -52,9 +52,8 @@ async function CreateETCProp(){
     let Memo = document.getElementById('ETCmemo').value;
     console.log(Amount, Receiver, Memo)
 
-    gas = contract.methods.CreateETCProposal(Amount, Receiver, Memo).estimateGas({from: account, value: 0})''
+    gas = contract.methods.CreateETCProposal(Amount, Receiver, Memo).estimateGas({from: account, value: 0});
     contract.methods.CreateETCProposal(Amount, Receiver, Memo).send({from: account, value: 0, gas: gas});
-
 }
 
 async function IsSigner(){
