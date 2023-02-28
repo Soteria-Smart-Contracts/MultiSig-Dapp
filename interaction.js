@@ -39,8 +39,8 @@ async function getID(){
 }
 
 async function IsSigner(){
-    let One = await contractAddress;
-    let Two;
+    let One = await contract.methods.SignerOne().call();
+    let Two = await contract.methods.SignerOne().call();
     let Three;
     let Four;
 }
